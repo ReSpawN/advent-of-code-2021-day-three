@@ -67,7 +67,7 @@ class SolvePartTwoCommand extends Command
         return $columns;
     }
 
-    private static function countCharactersPerColumn(array $columns)
+    private static function countCharactersPerColumn(array $columns): array
     {
         return array_map(function (array $column): array {
             $result = [0, 0];
